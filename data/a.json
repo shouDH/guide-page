@@ -2,8 +2,7 @@
     {"root":{"id":"root" ,"valid":"1","type":"0","children":[
         {"id":"I20200702000000001" ,"order":0},
         {"id":"I20200702000000002" ,"order":1},
-        {"id":"I20200702000000008" ,"order":2},
-        {"id":"I20200702000000019" ,"order":3}
+        {"id":"I20200702000000019" ,"order":2}
     ],"child":4},
     "I20200702000000001":{"id":"I20200702000000001","isDrug":false,"valid":"1","type":"1","parentId":"root","order":0,"value":"百度","url":"http://www.baidu.com","child":0},
     "I20200702000000002":{"id":"I20200702000000002","isDrug":false,"valid":"1","parentId":"root","order":1,"type":"0","value":"web开发","child":3,"children":[
