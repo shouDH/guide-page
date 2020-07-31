@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                overflow-y: hidden;
+            }
+            #app {
+                height: 953px;
+                color: white;
+            }
+            input,button,select,textarea { 
+                outline:none; 
+            }
+            label {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+            a {
+                color: white;
+                font-style: italic;
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+            }
+            .guideContent::-webkit-scrollbar {
+                width: 15px;
+            }
+            .guideContent::-webkit-scrollbar-track {
+                background-color: rgba(40, 32, 42, .9);
+            }
+            .guideContent::-webkit-scrollbar-thumb {
+                background-color: black;
+            }
+        </style>
+        <script src="vue.js"></script>
+        <title>导航页</title>
+    </head>
+    <body>
+        <div id="app">
+            <guider></guider>
+        </div>
+    </body>
+    <script src="data/init.js"></script>
+    <script src="data/state.json?callback=readConfig"></script>
+    <script src="store/store.js"></script>
+    <script src="store/dragstore.js"></script>
+    <script src="component/guider.js"></script>
+    <script src="component/guideTree.js"></script>
+    <script src="component/guideControl.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                show: true
+            }
+        });
+
+        //persistence
+        window.onbeforeunload=function(e){
+            this.store.state.currentId = '';
+        　　localStorage.setItem('state', JSON.stringify(store.state));
+
+            //删除无效数据
+            // var deleteList = [];
+            // for(var key in this.store.state.dataStore){
+            //     if(this.store.state.dataStore[key] && this.store.state.dataStore[key].valid == '0'){
+            //         var children = this.store.queryChild(this.store.state.dataStore[key].parentId);
+            //         var index = 0;
+            //         for(index in children){
+            //             if(children[index].id == this.store.state.dataStore[key].id){
+            //                 break;
+            //             }
+            //         }
+            //         children = children.splice(index, 1);
+                    
+            //         deleteList.push(startItem.id);
+            //         function search(item){
+            //             if(item.children.length > 0){
+            //                 for(var j in item.children){
+            //                     deleteList.push(item.children.id);
+            //                     search(this.store.state.dataStore[item.children.id]);
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+
+            // for(var index in deleteList){
+            //     delete this.store.state.dataStore[deleteList[index]];
+            // }
+        } 
+    </script>
+</html>

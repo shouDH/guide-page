@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="guideWrap" class="guideWrap">
+            <!-- treelist -->
+            <div class="guideTree">
+                <div id="guideItem0" class="guideItem">
+                    <div class="itemName">
+                        <span>item0</span>
+                    </div>
+                    <div class="guideTree">
+                        <div id="guideItem00" class="guideItem">
+                            <div class="itemName">
+                                <span>item00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="guideItem1" class="guideItem">
+                    <div class="itemName">
+                            <span>item1</span>
+                    </div>
+                </div>
+                <div id="guideItem2" class="guideItem">
+                    <div class="itemName">
+                            <span>item2</span>
+                    </div>
+                </div>
+                <div id="guideItem3" class="guideItem">
+                    <div class="itemName">
+                            <span>item3</span>
+                    </div>
+                </div>
+            </div>
+            <!-- add, update or delete tree item -->
+            <div class="guideControl">
+
+            </div>
+
+            <!-- gridLayout -->
+            <div class="gridLayout">
+                <div class="gridRow" rh="1">
+                    <div class="gridCol" cw="1">
+
+                    </div>
+                    <div class="gridCol" cw="1">
+
+                    </div>
+                </div>
+                <div class="gridRow" rh="2">
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var dataStore = [
+            { id: "0", type: "0", parentId: null, value: "item0", child: 1 },
+            { id: "1", type: "0", parentId: null, value: "item1", child: 0 },
+            { id: "2", type: "0", parentId: null, value: "item2", child: 0 },
+            { id: "3", type: "0", parentId: null, value: "item3", child: 0 },
+            { id: "00", type: "1", parentId: "0", value: "item00", child: 0 }
+        ];
+
+        function addItem(parentId, value, type){
+            //get parent item
+            var parentItem = queryItem(parentId);
+            //compute parent child num
+            parentItem.child ++;
+            //generate item id
+            var id = generateId(parentItem);
+
+            dataStore.push({
+                id: id,
+                parentId: parentId,
+                type: type,
+                value: value,
+                child: 0,
+            });
+        }
+
+        function updateItem(id, value){
+            //get item
+            var item = queryItem(id);
+
+            item.value = value;
+        }
+
+        function deleteItem(id){
+            var item = queryItem(id);
+            var resultDataStore = [];
+
+            for(var i = 0, len = dataStore.length; i < len; i++){
+                if(item.id == dataStore[i].id || item.parentId == dataStore[i].id){
+                    continue;
+                }
+                resultDataStore.push(dataStore[i]);
+            }
+
+            dataStore = resultDataStore;
+        }
+
+        function queryItem(id){
+            for(var i = 0, len = dataStore.length; i < len; i++){
+                if(id == dataStore[i].id){
+                    return dataStore[i];
+                }
+            }
+            return null;
+        }
+
+        function queryChild(id){
+            var childDataStore = [];
+            for(var i = 0, len = dataStore.length; i < len; i++){
+                if(id == dataStore[i].parentId){
+                    childDataStore.push(dataStore[i]);
+                }
+            }
+
+            return childDataStore;
+        }
+
+        function generateId(parentItem){
+            return parentItem.id + parentItem.child;
+        }
+    </script>
+</html>

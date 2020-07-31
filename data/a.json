@@ -1,0 +1,46 @@
+{"dataStore":
+    {"root":{"id":"root" ,"valid":"1","type":"0","children":[
+        {"id":"I20200702000000001" ,"order":0},
+        {"id":"I20200702000000002" ,"order":1},
+        {"id":"I20200702000000008" ,"order":2},
+        {"id":"I20200702000000019" ,"order":3}
+    ],"child":4},
+    "I20200702000000001":{"id":"I20200702000000001","isDrug":false,"valid":"1","type":"1","parentId":"root","order":0,"value":"百度","url":"http://www.baidu.com","child":0},
+    "I20200702000000002":{"id":"I20200702000000002","isDrug":false,"valid":"1","parentId":"root","order":1,"type":"0","value":"web开发","child":3,"children":[
+        {"id":"I20200702000000003" ,"order":0},
+        {"id":"I20200702000000004" ,"order":1},
+        {"id":"I20200702000000005" ,"order":2}
+    ]},
+    "I20200702000000003":{"id":"I20200702000000003","isDrug":false,"valid":"1","parentId":"I20200702000000002","order":0,"type":"0","value":"前端开发","child":2,"children":[
+        {"id":"I20200702000000006" ,"order":0},
+        {"id":"I20200702000000007" ,"order":1}
+    ]},
+    "I20200702000000004":{"id":"I20200702000000004","isDrug":false,"valid":"1","parentId":"I20200702000000002","order":1,"type":"0","value":"数据库","child":1,"children":[
+        {"id":"I20200702000000009" ,"order":0}
+    ]},
+    "I20200702000000005":{"id":"I20200702000000005","isDrug":false,"valid":"1","parentId":"I20200702000000002","order":2,"type":"0","value":"版本控制","child":1,"children":[
+        {"id":"I20200702000000010" ,"order":0}
+    ]},
+    "I20200702000000006":{"id":"I20200702000000006","isDrug":false,"valid":"1","parentId":"I20200702000000003","order":0,"type":"1","value":"Vue官网","child":0,"url":"https://cn.vuejs.org/"},
+    "I20200702000000007":{"id":"I20200702000000007","isDrug":false,"valid":"1","parentId":"I20200702000000003","order":1,"type":"1","value":"Vuex","child":0,"url":"https://vuex.vuejs.org/zh/"},
+    "I20200702000000008":{"id":"I20200702000000008","isDrug":false,"valid":"1","parentId":"root","order":2,"type":"0","value":"公司门户","child":9,"children":[
+        {"id":"I20200702000000011" ,"order":0},
+        {"id":"I20200702000000012" ,"order":1},
+        {"id":"I20200702000000013" ,"order":2},
+        {"id":"I20200702000000014" ,"order":3},
+        {"id":"I20200702000000015" ,"order":4},
+        {"id":"I20200702000000016" ,"order":5},
+        {"id":"I20200702000000017" ,"order":6},
+        {"id":"I20200702000000018" ,"order":7}
+    ]},
+    "I20200702000000009":{"id":"I20200702000000009","isDrug":false,"valid":"1","parentId":"I20200702000000004","order":0,"type":"1","value":"navicat激活","child":0,"url":"https://www.cnblogs.com/poloyy/p/12231357.html"},
+    "I20200702000000010":{"id":"I20200702000000010","isDrug":false,"valid":"1","parentId":"I20200702000000005","order":0,"type":"1","value":"git基本知识","child":0,"url":"https://www.liaoxuefeng.com/wiki/896043488029600/896067008724000"},
+    "I20200702000000011":{"id":"I20200702000000011","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":0,"type":"1","value":"问题平台","child":0,"url":"http://192.168.131.211:9989/openplat/faceplat.action#_blank"},
+    "I20200702000000012":{"id":"I20200702000000012","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":1,"type":"1","value":"ehr","child":0,"url":"http://ehr.neusoft.com/"},
+    "I20200702000000013":{"id":"I20200702000000013","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":2,"type":"1","value":"打卡","child":0,"url":"http://kq.neusoft.com/index.jsp"},
+    "I20200702000000014":{"id":"I20200702000000014","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":3,"type":"1","value":"日报","child":0,"url":"http://192.168.131.211:9997/projectmis/login.do;jsessionid=3882B9F12F5AE2DE5293DC1C4EDDED1D?method=begin"},
+    "I20200702000000015":{"id":"I20200702000000015","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":4,"type":"1","value":"报销","child":0,"url":"https://i-expenses.neusoft.com/netFinance/login.do?method=logout"},
+    "I20200702000000016":{"id":"I20200702000000016","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":5,"type":"1","value":"直播","child":0,"url":"https://ncp.neuqsoft.com:10101/oa/admin/auth/login"},
+    "I20200702000000017":{"id":"I20200702000000017","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":6,"type":"1","value":"东软网盘","child":0,"url":"http://pan.neusoft.com"},
+    "I20200702000000018":{"id":"I20200702000000018","isDrug":false,"valid":"1","parentId":"I20200702000000008","order":7,"type":"1","value":"bugbase","child":0,"url":"http://192.168.131.211:9999/bugbase/html/bugbase/security/login.html"},
+    "I20200702000000019":{"id":"I20200702000000019","isDrug":false,"valid":"1","parentId":"root","order":3,"type":"1","value":"百度翻译","child":0,"url":"https://fanyi.baidu.com/?aldtype=16047#auto/zh"}},"roots":16,"currentId":""}
