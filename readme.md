@@ -7,5 +7,4 @@
 使用vue来实现<br/>
 *use Vue*
 
-使用流程<br/>
-![在makrdown上生成gif动画](https://github.com/shouDH/guide-page/blob/master/image/introduce.gif)
+![使用流程](https://github.com/shouDH/guide-page/blob/master/image/introduce.gif)
