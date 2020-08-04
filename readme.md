@@ -7,4 +7,4 @@
 使用vue来实现<br/>
 *use Vue*
 
-![使用流程](https://github.com/shouDH/guide-page/raw/master/image/import.png)
+![使用流程](https://github.com/shouDH/guide-page/raw/master/image/introduce.gif)
