@@ -6,3 +6,6 @@
 
 使用vue来实现<br/>
 *use Vue*
+
+使用流程<br/>
+<img src="https://github.com/shouDH/guide-page/blob/master/image/introduce.gif" alt="show" />
