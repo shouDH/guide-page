@@ -8,4 +8,4 @@
 *use Vue*
 
 使用流程<br/>
-<img src="https://github.com/shouDH/guide-page/blob/master/image/introduce.gif" alt="show" />
+![在makrdown上生成gif动画](https://github.com/shouDH/guide-page/blob/master/image/introduce.gif)
